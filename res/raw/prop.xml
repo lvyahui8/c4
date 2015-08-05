@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<props>
+    <prop name="time">300</prop>
+    <prop name="bar_max">1200</prop>
+</props>

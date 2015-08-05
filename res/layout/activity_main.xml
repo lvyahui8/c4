@@ -1,0 +1,48 @@
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/RelativeLayout_with_center"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <!-- 屏幕中心按钮设置 android:layout_centerInParent="true" -->
+
+    <Button
+        android:id="@+id/center_menu_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/up" 
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" 
+        android:textColor="@color/white"
+        android:text="@string/start_bomb"/>
+
+	<!-- 经测试  max等于一千时，大概是25秒 -->
+    <ProgressBar android:id="@+id/bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center_menu_button"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:max="1200"
+        android:progress="0"
+        android:secondaryProgress="0" />
+    
+   <Button
+        android:id="@+id/dem_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:text="@string/demolition_bomb" /> 
+        
+   <ImageView 
+       android:id="@+id/smoke_view"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="50dp"
+       android:layout_alignParentBottom="true"
+       android:contentDescription="@null"/>
+</RelativeLayout>
